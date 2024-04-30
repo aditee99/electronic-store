@@ -49,11 +49,6 @@ public class AuthController {
     private JwtHelper helper ;
     @Autowired
     private UserService userService ;
-
-    @Value("${googleClientId}")
-    private String googleClientId;
-    @Value("${newPassword}")
-    private String newPassword;
     private Logger logger = LoggerFactory.getLogger(AuthController.class);
     @GetMapping("/current")
     public ResponseEntity<UserDto> getCurrentUser(Principal principal){
