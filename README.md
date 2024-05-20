@@ -39,12 +39,15 @@ Creating a backend for an electric store application involves several key compon
     - Log in to the AWS Management Console.
     - Launch an EC2 instance with an appropriate instance type.
     - SSH into the EC2 instance:
-      ```bash
-      ssh -i "path/to/KeyPair" ubuntu@ec2-13-127-253-139.ap-south-1.compute.amazonaws.com
-     ```
+     
+    To connect to your EC2 instance, use the following SSH command. Make sure you replace `"path/to/KeyPair"` with the actual path to your key pair file.
+
+    ```sh
+    ssh -i "path/to/KeyPair" ubuntu@ec2-13-127-253-139.ap-south-1.compute.amazonaws.com
+
 ![EC2 Instance Creation](Screenshots/EC2_Instance_Creation.png)
 
-2. **Deploying Project: Image from Docker Hub and running from the EC2 instance:**
+3. **Deploying Project: Image from Docker Hub and running from the EC2 instance:**
     ```bash
      sudo su
      apt update
