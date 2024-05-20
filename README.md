@@ -2,7 +2,6 @@
 Creating a backend for an electric store application involves several key components and functionalities to ensure smooth operations for managing products, handling orders, and maintaining customer relationships
 
 ## Features
-
 - **User Management**: CRUD operations for users.
 - **Product Management**: CRUD operations for products.
 - **Category Management**: CRUD operations for product categories.
@@ -25,21 +24,22 @@ Creating a backend for an electric store application involves several key compon
 2. **Set up the MySQL database:**
     - Create a database named `electronic_store`.
     - Update the `application.properties` file with your MySQL database credentials.
-3.  **Build the project:**
+3. **Build the project:**
+
     ```bash
     mvn clean install
     ```
 4. **Run the application:**
-    ```bash
+
+   ```bash
     mvn spring-boot:run
     ```
 ### Deployment to AWS
-
 1. **Set up an AWS EC2 instance:**
     - Log in to the AWS Management Console.
     - Launch an EC2 instance with an appropriate instance type.
     - SSH into the EC2 instance:
-     
+    
     To connect to your EC2 instance, use the following SSH command. Make sure you replace `"path/to/KeyPair"` with the actual path to your key pair file.
 
     ```sh
@@ -74,110 +74,48 @@ Creating a backend for an electric store application involves several key compon
    ```bash
    docker run -d --name store -p 9091:9090 --network=bootApp -e MYSQL_HOST=mysqldb -e MYSQL_PORT=3306 -v /projects/images:/images aditeeadhikari98408/electronic1.0!
    ```
-3.**Adding Inbound Rule**
+3. **Adding Inbound Rule**
 
    Add inbound rule at port 9091
    
-   
 ![Add inbound rule](Screenshots/Inbound_Rule.png)
-
 
 4. **Associating Elastic IP**
    
-
-   
 ![Associating Elastic IP](Screenshots/Associating_ElasticIP.png)
 
-
-
 5. **Swagger Endpoint for Electronic Store**
-   
-<br>
 
 ![Swagger](Screenshots/Swagger_in_EC2.png)
 
-<br>
-
 ## Some of the Postman and Swagger Responses
 
-1. **Create User**
-<br>
-
-![Create User](Screenshots/Create_User.png)
-
-<br>
-
-2. **Login User**
-
-<br>
-
-![Login User](Screenshots/login.png)
-
-<br>
-
-3. **Authorization in Swagger using JWT Token**
-
-<br>
-
-![Auth](Screenshots/Authourization_Swagger.png)
-
-<br>
-
-4. **Get Users**
-
-<br>
-
-![Get Users](Screenshots/Get_Users_Postman.png)
-
-<br>
-
-5. **Get User by Id**
-   
-<br>
-
-![Get User](Screenshots/Get_User.png)
-
-<br>
-
-6. **Create Product**
-
-<br>
-
-![Create Product](Screenshots/Create_Product.png)
-
-<br>
-
-7. **Get Product**
-
-<br>
-
-![Get Product](Screenshots/Get_Products.png)
-
-<br>
-
-8. **Upload Product Image**
-
-<br>
-
-![Upload Product Image](Screenshots/Upload_Product_Image.png)
-
-<br>
-
-9. **Get Product Image**
-
-<br>
-
+1. **Create User**<br/><br/><br/>
+![Create User](Screenshots/Create_User.png)<br/><br/>
+2. **Login User**<br/><br/><br/>
+![Login User](Screenshots/login.png)<br/><br/>
+3. **Authorization in Swagger using JWT Token**<br/><br/><br/>
+![Auth](Screenshots/Authourization_Swagger.png)<br/><br/>
+4. **Get Users**<br/><br/><br/>
+![Get Users](Screenshots/Get_Users_Postman.png)<br/><br/>
+5. **Get User by Id**<br/><br/><br/>
+![Get User](Screenshots/Get_User.png)<br/><br/>
+6. **Create Product**<br/><br/><br/>
+![Create Product](Screenshots/Create_Product.png)<br/><br/>
+7. **Get Product**<br/><br/><br/>
+![Get Product](Screenshots/Get_Products.png)<br/><br/>
+8. **Upload Product Image**<br/><br/><br/>
+![Upload Product Image](Screenshots/Upload_Product_Image.png)<br/><br/>
+9. **Get Product Image**<br/><br/><br/>
 ![Get Product Image](Screenshots/Serve_Product_Image.png)
-
-<br>
-
 
 ## Connecting to Database in Docker through SSH Connect
 
-1. - SSH into the EC2 instance:
-      ```bash
-      ssh -i "path/to/KeyPair" ubuntu@ec2-13-127-253-139.ap-south-1.compute.amazonaws.com
-     ```
+1. SSH into the EC2 instance:
+     
+   ```bash
+     ssh -i "path/to/KeyPair" ubuntu@ec2-13-127-253-139.ap-south-1.compute.amazonaws.com
+    ```
 2. ```bash
      sudo su
     ```
@@ -195,15 +133,4 @@ Creating a backend for an electric store application involves several key compon
     ```
  6. MySQL response :
 
-    <br>
-    
 ![Database](Screenshots/Update_in_database.png)
-
-
-
-
-
-   
-  
-
-
