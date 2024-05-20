@@ -48,6 +48,7 @@ Creating a backend for an electric store application involves several key compon
 ![EC2 Instance Creation](Screenshots/EC2_Instance_Creation.png)
 
 2. **Deploying Project: Image from Docker Hub and running from the EC2 instance:**
+
     ```bash
      sudo su
      apt update
@@ -75,23 +76,19 @@ Creating a backend for an electric store application involves several key compon
    ```
 3.**Adding Inbound Rule**
 
-   <br>
    Add inbound rule at port 9091
    
-   <br>
    
 ![Add inbound rule](Screenshots/Inbound_Rule.png)
 
-   <br>
 
 4. **Associating Elastic IP**
    
-<br>
+
    
 ![Associating Elastic IP](Screenshots/Associating_ElasticIP.png)
 
 
-<br>
 
 5. **Swagger Endpoint for Electronic Store**
    
