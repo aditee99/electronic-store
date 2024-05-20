@@ -80,14 +80,19 @@ Creating a backend for an electric store application involves several key compon
 ![Add inbound rule](Screenshots/Inbound_Rule.png)
 
 
+
 4. **Associating Elastic IP**
    
+
    
 ![Associating Elastic IP](Screenshots/Associating_ElasticIP.png)
 
 
+
+
 5. **Swagger Endpoint for Electronic Store**
    
+
 
 ![Swagger](Screenshots/Swagger_in_EC2.png)
 
@@ -96,15 +101,21 @@ Creating a backend for an electric store application involves several key compon
 
 1. **Create User**
 
+
 ![Create User](Screenshots/Create_User.png)
+
 
 2. **Login User**
 
+
 ![Login User](Screenshots/login.png)
+
 
 3. **Authorization in Swagger using JWT Token**
 
+
 ![Auth](Screenshots/Authourization_Swagger.png)
+
 
 4. **Get Users**
 
@@ -112,23 +123,34 @@ Creating a backend for an electric store application involves several key compon
 
 5. **Get User by Id**
    
+
 ![Get User](Screenshots/Get_User.png)
+
 
 6. **Create Product**
 
+
 ![Create Product](Screenshots/Create_Product.png)
+
 
 7. **Get Product**
 
+
 ![Get Product](Screenshots/Get_Products.png)
+
 
 8. **Upload Product Image**
 
+
 ![Upload Product Image](Screenshots/Upload_Product_Image.png)
+
 
 9. **Get Product Image**
 
+
 ![Get Product Image](Screenshots/Serve_Product_Image.png)
+
+
 
 ## Connecting to Database in Docker through SSH Connect
 
