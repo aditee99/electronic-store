@@ -42,7 +42,7 @@ Creating a backend for an electric store application involves several key compon
       ```bash
       ssh -i "path/to/KeyPair" ubuntu@ec2-13-127-253-139.ap-south-1.compute.amazonaws.com
      ```
-     ![EC2 Instance Creation](Screenshots/EC2_Instance_Creation.png)
+    ![EC2 Instance Creation](Screenshots/EC2_Instance_Creation.png)
 
 2. **Deploying Project: Image from Docker Hub and running from the EC2 instance:**
     ```bash
@@ -65,11 +65,11 @@ Creating a backend for an electric store application involves several key compon
     Run Mysql:
    ```bash
     docker run -d --name mysqldb -p 3308:3306 --network=networkName  -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=electronic_store -v /projects/data:/var/lib/mysql mysql
-```
+   ```
     Run Application:
    ```bash
    docker run -d --name store -p 9091:9090 --network=bootApp -e MYSQL_HOST=mysqldb -e MYSQL_PORT=3306 -v /projects/images:/images aditeeadhikari98408/electronic1.0!
-```
+   ```
 3.**Adding Inbound Rule**
   
 
