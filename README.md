@@ -142,7 +142,7 @@ Creating a backend for an electric store application involves several key compon
    show tables;
    select * from users
     ```
- 6. Updates Database :
+ 6. MySQL response :
     
 ![Database](Screenshots/Update_in_database.png)
 
