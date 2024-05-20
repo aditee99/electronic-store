@@ -74,82 +74,105 @@ Creating a backend for an electric store application involves several key compon
    docker run -d --name store -p 9091:9090 --network=bootApp -e MYSQL_HOST=mysqldb -e MYSQL_PORT=3306 -v /projects/images:/images aditeeadhikari98408/electronic1.0!
    ```
 3.**Adding Inbound Rule**
+
+   <br>
    Add inbound rule at port 9091
    
+   <br>
    
 ![Add inbound rule](Screenshots/Inbound_Rule.png)
 
-
+   <br>
 
 4. **Associating Elastic IP**
    
-
+<br>
    
 ![Associating Elastic IP](Screenshots/Associating_ElasticIP.png)
 
 
-
+<br>
 
 5. **Swagger Endpoint for Electronic Store**
    
-
+<br>
 
 ![Swagger](Screenshots/Swagger_in_EC2.png)
 
+<br>
 
 ## Some of the Postman and Swagger Responses
 
 1. **Create User**
-
+<br>
 
 ![Create User](Screenshots/Create_User.png)
 
+<br>
 
 2. **Login User**
 
+<br>
 
 ![Login User](Screenshots/login.png)
 
+<br>
 
 3. **Authorization in Swagger using JWT Token**
 
+<br>
 
 ![Auth](Screenshots/Authourization_Swagger.png)
 
+<br>
 
 4. **Get Users**
 
+<br>
+
 ![Get Users](Screenshots/Get_Users_Postman.png)
+
+<br>
 
 5. **Get User by Id**
    
+<br>
 
 ![Get User](Screenshots/Get_User.png)
 
+<br>
 
 6. **Create Product**
 
+<br>
 
 ![Create Product](Screenshots/Create_Product.png)
 
+<br>
 
 7. **Get Product**
 
+<br>
 
 ![Get Product](Screenshots/Get_Products.png)
 
+<br>
 
 8. **Upload Product Image**
 
+<br>
 
 ![Upload Product Image](Screenshots/Upload_Product_Image.png)
 
+<br>
 
 9. **Get Product Image**
 
+<br>
 
 ![Get Product Image](Screenshots/Serve_Product_Image.png)
 
+<br>
 
 
 ## Connecting to Database in Docker through SSH Connect
@@ -174,6 +197,8 @@ Creating a backend for an electric store application involves several key compon
    select * from users
     ```
  6. MySQL response :
+
+    <br>
     
 ![Database](Screenshots/Update_in_database.png)
 
