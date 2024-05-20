@@ -42,7 +42,7 @@ Creating a backend for an electric store application involves several key compon
       ```bash
       ssh -i "path/to/KeyPair" ubuntu@ec2-13-127-253-139.ap-south-1.compute.amazonaws.com
      ```
-    ![EC2 Instance Creation](Screenshots/EC2_Instance_Creation.png)
+![EC2 Instance Creation](Screenshots/EC2_Instance_Creation.png)
 
 2. **Deploying Project: Image from Docker Hub and running from the EC2 instance:**
     ```bash
