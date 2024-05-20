@@ -90,23 +90,23 @@ Creating a backend for an electric store application involves several key compon
 
 ## Some of the Postman and Swagger Responses
 
-1. **Create User**<br/><br/><br/>
+1. **Create User**<br/><br/>
 ![Create User](Screenshots/Create_User.png)<br/><br/>
-2. **Login User**<br/><br/><br/>
+2. **Login User**<br/><br/>
 ![Login User](Screenshots/login.png)<br/><br/>
-3. **Authorization in Swagger using JWT Token**<br/><br/><br/>
+3. **Authorization in Swagger using JWT Token**<br/><br/>
 ![Auth](Screenshots/Authourization_Swagger.png)<br/><br/>
-4. **Get Users**<br/><br/><br/>
+4. **Get Users**<br/><br/>
 ![Get Users](Screenshots/Get_Users_Postman.png)<br/><br/>
-5. **Get User by Id**<br/><br/><br/>
+5. **Get User by Id**<br/><br/>
 ![Get User](Screenshots/Get_User.png)<br/><br/>
-6. **Create Product**<br/><br/><br/>
+6. **Create Product**<br/><br/>
 ![Create Product](Screenshots/Create_Product.png)<br/><br/>
-7. **Get Product**<br/><br/><br/>
+7. **Get Product**<br/><br/>
 ![Get Product](Screenshots/Get_Products.png)<br/><br/>
-8. **Upload Product Image**<br/><br/><br/>
+8. **Upload Product Image**<br/><br/>
 ![Upload Product Image](Screenshots/Upload_Product_Image.png)<br/><br/>
-9. **Get Product Image**<br/><br/><br/>
+9. **Get Product Image**<br/><br/>
 ![Get Product Image](Screenshots/Serve_Product_Image.png)
 
 ## Connecting to Database in Docker through SSH Connect
