@@ -71,6 +71,86 @@ Creating a backend for an electric store application involves several key compon
    docker run -d --name store -p 9091:9090 --network=bootApp -e MYSQL_HOST=mysqldb -e MYSQL_PORT=3306 -v /projects/images:/images aditeeadhikari98408/electronic1.0!
    ```
 3.**Adding Inbound Rule**
+   Add inbound rule at port 9091
+   
+![Add inbound rule](Screenshots/Inbound_Rule.png)
+
+4. **Associating Elastic IP**
+   
+![Associating Elastic IP](Screenshots/Associating_ElasticIP.png)
+
+5. **Swagger Endpoint for Electronic Store**
+   
+![Swagger](Screenshots/Swagger_in_EC2.png)
+
+## Some of the Postman and Swagger Responses
+
+1. **Create User**
+
+![Create User](Screenshots/Create_User.png)
+
+2. **Login User**
+
+![Login User](Screenshots/login.png)
+
+3. **Authorization in Swagger using JWT Token**
+
+![Auth](Screenshots/Authourization_Swagger.png)
+
+4. **Get Users**
+
+![Get Users](Screenshots/Get_Users_Postman.png)
+
+5. **Get User by Id**
+   
+![Get User](Screenshots/Get_User.png)
+
+6. **Create Product**
+
+![Create Product](Screenshots/Create_Product.png)
+
+7. **Get Product**
+
+![Get Product](Screenshots/Get_Products.png)
+
+8. **Upload Product Image**
+
+![Upload Product Image](Screenshots/Upload_Product_Image.png)
+
+9. **Get Product Image**
+
+![Get Product Image](Screenshots/Serve_Product_Image.png)
+
+## Connecting to Database in Docker through SSH Connect
+
+1. - SSH into the EC2 instance:
+      ```bash
+      ssh -i "path/to/KeyPair" ubuntu@ec2-13-127-253-139.ap-south-1.compute.amazonaws.com
+     ```
+2. ```bash
+     sudo su
+    ```
+3. ```bash
+     docker exec -it mysqldb bash
+    ```
+4. ```bash
+   Mysql -u root --port 3308 -p
+   ```
+5. ```bash
+   show databases;
+   use electronic_store
+   show tables;
+   select * from users
+    ```
+ 6. Updates Database :
+    
+![Database](Screenshots/Update_in_database.png)
+
+
+
+
+
+   
   
 
 
