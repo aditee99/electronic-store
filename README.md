@@ -39,28 +39,33 @@ Creating a backend for an electric store application involves several key compon
     - Log in to the AWS Management Console.
     - Launch an EC2 instance with an appropriate instance type.
     - SSH into the EC2 instance.
-2. **Log in to Docker Hub from the EC2 instance:**
+2. **Deploying Project: Image from Docker Hub and running from the EC2 instance:**
     ```bash
-    docker login
+     sudo su
+     apt update
+     apt upgrade
     ```
-3. **Build Docker**
- ```bash
-   Build Docker Image : docker build -t electronic .
-   docker tag electronic aditeeadhikari98408/electronic1.0
-   docker push aditeeadhikari98408/electronic1.0
-   docker pull aditeeadhikari98408/electronic1.0
-
-      
-4. **Pull the Docker image from Docker Hub:**
+    Remove any docker files that are running in the system:  
     ```bash
-    docker pull your-dockerhub-username/electronic-store-backend
+    apt-get remove docker docker-engine docker.io
+     ```
+    Install docker:
+   ```bash
+    apt install docker.io
     ```
+    Create Network:
+   ```bash
+    docker network create networkName
+   ```
+    Run Mysql:
+   ```bash
+    docker run -d --name mysqldb -p 3308:3306 --network=networkName  -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=electronic_store -v /projects/data:/var/lib/mysql mysql
+```
+    Run Application:
+   ```bash
+   docker run -d --name store -p 9091:9090 --network=bootApp -e MYSQL_HOST=mysqldb -e MYSQL_PORT=3306 -v /projects/images:/images aditeeadhikari98408/electronic1.0!
+```
+3.**Adding Inbound Rule**
+  
 
-5. **Run the Docker container:**
-    ```bash
-    docker run -d -p 8080:8080 --name electronic-store-backend your-dockerhub-username/electronic-store-backend
-    ```
 
-6. **Set up the database connection on AWS:**
-    - Ensure your MySQL database is accessible from the EC2 instance.
-    - Update the `application.properties` file within your Docker image or use environment variables to point to your AWS RDS or on-premise MySQL database.
